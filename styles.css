@@ -92,6 +92,8 @@ nav ul li a:hover {
     color: #3498db;
 }
 
+
+
 /* Logo styling */
 .logo {
     width: 50px;
@@ -154,6 +156,13 @@ nav ul li a:hover {
 
     .logo {
         width: 50px; /* Reset logo size for vertical layout */
+    }
+}
+
+/* Media query for screen size below 600px */
+@media (max-width: 600px) {
+    ul li {
+        display: none; /* Hide all li elements */
     }
 }
 /* Hero Section */
