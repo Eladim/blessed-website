@@ -1,0 +1,208 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+nav {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#hero h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* Text and Image Sections */
+.text-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.text-image-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-image-section .content {
+    max-width: 600px;
+}
+
+.text-image-section .content h2 {
+    font-size: 36px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.text-image-section .content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.text-image-section .image img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Media Section */
+#social-media {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+}
+
+#social-media h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#social-media ul li a {
+    font-size: 36px;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+#social-media ul li a:hover {
+    color: #3498db;
+}
+
+/* Join Section */
+#join {
+    background-color: #3498db;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#join h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#join ul {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds spacing between items */
+    padding: 0; /* Removes default padding */
+}
+
+#join ul li {
+    list-style: none; /* Removes bullet points */
+}
+
+#join ul li a {
+    background-color: #2980b9;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center; /* Centers the text inside the button */
+}
+
+#join ul li a:hover {
+    background-color: #1f6f93;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+/* Logo Styling */
+.logo {
+    width: 50px; /* Set width based on desired size */
+    margin-left: 20px; /* Add spacing between the logo and other elements */
+}
+
+/* Adjust logo size on smaller screens for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 90px; /* Scale down on smaller devices */
+    }
+}
